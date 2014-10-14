@@ -9,7 +9,7 @@ public class Book {
 	String Price;
 	String Name;
 	String Age;
-	String Country;
+	
 	public String getISBN(){
 		return ISBN;
 	}
@@ -60,11 +60,5 @@ public class Book {
 	public void setAge(String age){
 		Age=age;
 	}
-	public String getCountry(){
-		return Country;
-	}
-	public void setCountry(String country){
-		Country=country;
-	}
-
+	
 }

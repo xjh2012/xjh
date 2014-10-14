@@ -11,7 +11,7 @@ import org.apache.struts2.ServletActionContext;
 public class BookAction extends ActionSupport {
 	 
 	 private String name;
-		//static{System.out.println("haha");}
+         static{System.out.println("haha");}
 	 private Vector<String> v=new Vector<String>();
 	 private Vector<String> ve=new Vector<String>();
 	public String getName()
@@ -41,7 +41,7 @@ public class BookAction extends ActionSupport {
 	public String delete() throws Exception {
 		BookDAO bd=new BookDAO();
 	    v=bd.delete(name);
-	    System.out.println("------>" + name);
+	    
 	    for(int i=0;i<v.size();i++){
 	    	 System.out.println(v.elementAt(i));
 	    }
